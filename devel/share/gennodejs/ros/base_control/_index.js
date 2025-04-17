@@ -1,0 +1,1 @@
+/home/prox/motion_ws/devel/.private/base_control/share/gennodejs/ros/base_control/_index.js

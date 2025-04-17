@@ -1,0 +1,12 @@
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In member function ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > Controller::interpolateVelocities(const std::vector<double>&)[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:592:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpredicted_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kpredicted_u[m[K’?
+  592 |     if ([01;31m[Kpredicted_x[m[K.empty() || predicted_u.size() < 3) {
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[Kpredicted_u[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:606:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpredicted_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kpredicted_u[m[K’?
+  606 |             [01;31m[Kpredicted_x[m[K[step * 3 + 0],     // vx at current step
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[Kpredicted_u[m[K
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

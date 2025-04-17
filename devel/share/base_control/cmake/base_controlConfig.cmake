@@ -1,0 +1,1 @@
+/home/prox/motion_ws/devel/.private/base_control/share/base_control/cmake/base_controlConfig.cmake

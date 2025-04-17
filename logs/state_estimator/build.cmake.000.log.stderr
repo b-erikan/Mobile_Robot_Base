@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/prox/motion_ws/src/state_estimator/CMakeLists.txt:38 (target_link_libraries):
+  Cannot specify link libraries for target "state_estimator" which is not
+  built by this project.
+
+

@@ -1,0 +1,1 @@
+/home/prox/motion_ws/devel/.private/base_control/share/common-lisp/ros/base_control/msg/Winkel.lisp

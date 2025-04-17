@@ -1,0 +1,13 @@
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:516:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Controller::printWaypoints(std::vector<Point>)[m[K’
+  516 | void [01;31m[KController[m[K::printWaypoints(std::vector<Point> waypoints)
+      |      [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:103:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Controller::printWaypoints(const std::vector<double>&, const std::vector<double>&, const std::vector<double>&)[m[K’
+  103 |     void [01;36m[KprintWaypoints[m[K(const std::vector<double>& p_x,const std::vector<double>& p_y,const std::vector<double>& theta);
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:81:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Controller[m[K’ defined here
+   81 | class [01;36m[KController[m[K
+      |       [01;36m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

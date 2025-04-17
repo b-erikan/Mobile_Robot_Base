@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/prox/motion_ws/devel/.private/sensor_fusion_kalman/setup.sh

@@ -1,0 +1,11 @@
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In member function ‘[01m[Kfloat PID::update(float)[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:265:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_output[m[K’ was not declared in this scope; did you mean ‘[01m[Kmax_output_[m[K’?
+  265 |     else if(output < -[01;31m[Kmax_output[m[K){
+      |                       [01;31m[K^~~~~~~~~~[m[K
+      |                       [32m[Kmax_output_[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:273:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  273 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

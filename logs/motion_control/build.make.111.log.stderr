@@ -1,0 +1,20 @@
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:272:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprediction_viz_pub[m[K’ was not declared in this scope
+  272 |     [01;31m[Kprediction_viz_pub[m[K = nh.advertise<visualization_msgs::MarkerArray>("predicted_trajectory", 1);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K At global scope:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:512:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Controller::visualizePredictedTrajectory(const std::vector<double>&)[m[K’
+  512 | void [01;31m[KController[m[K::visualizePredictedTrajectory(const std::vector<double>& predicted_x) {
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:512:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Controller::visualizePredictedTrajectory(const std::vector<double>&)[m[K’
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:82:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Controller[m[K’ defined here
+   82 | class [01;36m[KController[m[K
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In member function ‘[01m[Kvoid Controller::startControlLoop()[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:630:17:[m[K [01;31m[Kerror: [m[K‘[01m[KvisualizePredictedTrajectory[m[K’ was not declared in this scope
+  630 |                 [01;31m[KvisualizePredictedTrajectory[m[K(predicted_x);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

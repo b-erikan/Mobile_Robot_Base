@@ -1,0 +1,17 @@
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In member function ‘[01m[Kvoid Controller::systemIdentificationLoop()[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:653:87:[m[K [01;31m[Kerror: [m[K‘[01m[Kw_meas[m[K’ was not declared in this scope; did you mean ‘[01m[Kwz_meas[m[K’?
+  653 |         logStates({Vx_des, Vy_des, w_des},{px_meas,py_meas,theta_meas,vx_meas,vy_meas,[01;31m[Kw_meas[m[K});
+      |                                                                                       [01;31m[K^~~~~~[m[K
+      |                                                                                       [32m[Kwz_meas[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:653:18:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::vector<float>&[m[K’
+  653 |         [01;31m[KlogStates({Vx_des, Vy_des, w_des},{px_meas,py_meas,theta_meas,vx_meas,vy_meas,w_meas})[m[K;
+      |         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:334:91:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid Controller::logStates(const std::vector<float>&, const std::vector<float>&)[m[K’
+  334 | void Controller::logStates(const std::vector<float>& reference, [01;36m[Kconst std::vector<float>& states[m[K)
+      |                                                                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:654:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kctr[m[K’ was not declared in this scope
+  654 |         [01;31m[Kctr[m[K++;
+      |         [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

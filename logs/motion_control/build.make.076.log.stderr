@@ -1,0 +1,40 @@
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:4:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KMPC::MPC(int, float, float, float, float)[m[K’
+    4 | [01;31m[KMPC[m[K::MPC(int N,float dt,float u_max_x, float u_max_y, float w_max) : N_(N), dt_(dt), u_max_x_(u_max_x), u_max_y_(u_max_y), w_max_(w_max)
+      | [01;31m[K^~~[m[K
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KMPC::MPC(const MPC&)[m[K’
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:42:5:[m[K [01;36m[Knote: [m[K                ‘[01m[KMPC::MPC()[m[K’
+   42 |     [01;36m[KMPC[m[K();
+      |     [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MPC[m[K’ defined here
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:238:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MPC::setHorizon(int)[m[K’
+  238 | void [01;31m[KMPC[m[K::setHorizon(int N)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:238:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid MPC::setHorizon(int)[m[K’
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MPC[m[K’ defined here
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:242:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MPC::setLimits(float, float, float)[m[K’
+  242 | void [01;31m[KMPC[m[K::setLimits(float u_max_x, float u_max_y, float w_max)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:242:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid MPC::setLimits(float, float, float)[m[K’
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MPC[m[K’ defined here
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:280:48:[m[K [01;31m[Kerror: [m[K‘[01m[KMPC_PredHorizon[m[K’ was not declared in this scope
+  280 |     trajectory_planner = std::make_unique<MPC>([01;31m[KMPC_PredHorizon[m[K, MPC_dt, u_max_x, u_max_y, w_max);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In member function ‘[01m[Kvoid Controller::startControlLoop()[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:352:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kdt[m[K’ was not declared in this scope
+  352 |     PID PID_Vx(1, 0.1, 0.05, [01;31m[Kdt[m[K, 2);
+      |                              [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

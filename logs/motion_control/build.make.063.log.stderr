@@ -1,0 +1,8 @@
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:104:82:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  104 |     bool readWaypoints(const std::string &filePath, std::vector<Point> &waypoints[01;31m[K)[m[K
+      |                                                                                  [01;31m[K^[m[K
+      |                                                                                   [32m[K;[m[K
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

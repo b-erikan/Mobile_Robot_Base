@@ -1,0 +1,1 @@
+/home/prox/motion_ws/devel/.private/base_control/share/roseus/ros/base_control/manifest.l

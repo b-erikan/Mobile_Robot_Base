@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/prox/motion_ws/devel/.private/state_estimator/setup.sh

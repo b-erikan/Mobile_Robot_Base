@@ -1,0 +1,1 @@
+/home/prox/motion_ws/devel/.private/motion_control/share/roseus/ros/motion_control/manifest.l

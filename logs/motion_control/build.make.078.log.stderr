@@ -1,0 +1,55 @@
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:4:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KMPC::MPC(int, float, float, float, float)[m[K’
+    4 | [01;31m[KMPC[m[K::MPC(int N,float dt,float u_max_x, float u_max_y, float w_max) : N_(N), dt_(dt), u_max_x_(u_max_x), u_max_y_(u_max_y), w_max_(w_max)
+      | [01;31m[K^~~[m[K
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KMPC::MPC(const MPC&)[m[K’
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:42:5:[m[K [01;36m[Knote: [m[K                ‘[01m[KMPC::MPC()[m[K’
+   42 |     [01;36m[KMPC[m[K();
+      |     [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MPC[m[K’ defined here
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:238:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MPC::setHorizon(int)[m[K’
+  238 | void [01;31m[KMPC[m[K::setHorizon(int N)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:238:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid MPC::setHorizon(int)[m[K’
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MPC[m[K’ defined here
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:242:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid MPC::setLimits(float, float, float)[m[K’
+  242 | void [01;31m[KMPC[m[K::setLimits(float u_max_x, float u_max_y, float w_max)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:242:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid MPC::setLimits(float, float, float)[m[K’
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass MPC[m[K’ defined here
+   39 | class [01;36m[KMPC[m[K
+      |       [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:[m[K In member function ‘[01m[Kvoid Controller::startControlLoop()[m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:374:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kdt[m[K’ was not declared in this scope
+  374 |     ros::Rate rate(1 / [01;31m[Kdt[m[K);
+      |                        [01;31m[K^~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/locale_conv.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/locale:43[m[K,
+                 from [01m[K/usr/include/c++/11/iomanip:43[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:5[m[K,
+                 from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = MPC; _Args = {const int&, const float&, const float&, const float&, const float&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<MPC>][m[K’:
+[01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:280:47:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:962:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMPC::MPC(const int&, const float&, const float&, const float&, const float&)[m[K’
+  962 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/prox/motion_ws/src/motion_controller/src/motion_control.cpp:1[m[K:
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:42:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMPC::MPC()[m[K’
+   42 |     [01;36m[KMPC[m[K();
+      |     [01;36m[K^~~[m[K
+[01m[K/home/prox/motion_ws/src/motion_controller/include/motion_controller/motion_control.h:42:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 5 provided
+make[2]: *** [CMakeFiles/motion_control_start.dir/build.make:63: CMakeFiles/motion_control_start.dir/src/motion_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:196: CMakeFiles/motion_control_start.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
