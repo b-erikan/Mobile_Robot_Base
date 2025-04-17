@@ -23,7 +23,7 @@ The overall control framework is structured as follows:
 
 ---
 
-## 🗺️ Step-by-Step Execution
+##  Step-by-Step Execution
 
 ### 1. Controller Initialization
 - Initializes ROS publishers and subscribers.
