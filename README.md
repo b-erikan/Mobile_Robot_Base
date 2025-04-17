@@ -125,8 +125,7 @@ rosrun motion_control motion_control_start
 
 - Add dynamic obstacle avoidance using MPC constraints.
 - Integrate adaptive PID tuning based on model mismatch.
-- Expand to support omnidirectional/mecanum base models.
-
+- 
 ---
 
 ##  Visualization
