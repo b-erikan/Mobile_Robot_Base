@@ -98,31 +98,8 @@ The overall control framework is structured as follows:
 
 ---
 
-##  Directory Structure
 
-```
-├── src/
-│   ├── controller.cpp
-│   ├── mpc.cpp
-│   ├── pid.cpp
-│   └── ...
-├── include/
-│   ├── controller.hpp
-│   ├── mpc.hpp
-│   ├── pid.hpp
-│   └── ...
-├── data/
-│   └── waypoints.csv
-├── logs/
-│   └── *.csv
-├── launch/
-│   └── controller.launch
-├── CMakeLists.txt
-├── package.xml
-└── README.md
-```
 
----
 
 ## Build and Run
 
