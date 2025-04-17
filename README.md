@@ -140,4 +140,4 @@ The predicted MPC trajectory and current reference path are published to RViz as
 Feel free to reach out for questions, improvements, or collaborations!
 
 **Berke Erikan**  
- [GitHub](https://github.com/berkeerikan) | [LinkedIn](https://www.linkedin.com/in/berkeerikan)
+ [GitHub](https://github.com/berkeerikan) | [LinkedIn](https://www.linkedin.com/in/aerikan/)
