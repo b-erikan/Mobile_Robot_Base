@@ -106,7 +106,7 @@ The overall control framework is structured as follows:
 ```bash
 # Clone the repository
 cd ~/catkin_ws/src
-git clone https://github.com/your-username/Mobile_Robot_Base_.git
+git clone https://github.com/b-erikan/Mobile_Robot_Base_.git
 cd ~/catkin_ws
 catkin_make
 
@@ -125,7 +125,7 @@ rosrun motion_control motion_control_start
 
 - Add dynamic obstacle avoidance using MPC constraints.
 - Integrate adaptive PID tuning based on model mismatch.
-- 
+- Improve state estimation for better performance.
 ---
 
 ##  Visualization
